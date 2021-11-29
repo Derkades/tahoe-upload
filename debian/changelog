@@ -1,3 +1,9 @@
+tahoe-upload (1.1.1-1) any; urgency=medium
+
+  * Fix directory upload without trailing slash
+
+ -- Robin Slot <robin@rkslot.nl>  Mon, 29 Nov 2021 20:09:28 +0100
+
 tahoe-upload (1.1.0-1) any; urgency=medium
 
   * Performance improvements for unchanged files
