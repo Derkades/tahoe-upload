@@ -139,9 +139,10 @@ def upload_contents(parent_path: Path, api: str, parent_cap: str, log_prefix: st
 def main(path_str: str, api: str, cap: str) -> None:
     path = Path(path_str)
     if path_str.endswith('/'):
-        upload_contents(parent_path=path, api=api, parent_cap=cap, log_prefix='')
+        upload_contents(path, api, cap, log_prefix='')
     else:
-        upload_dir(path=path, api=api, parent_cap=cap, log_prefix='')
+        parent_contents = get_names_in_dircap(api, cap)
+        upload_dir(path, api, cap, parent_contents, log_prefix='')
 
 
 if __name__ == "__main__":
