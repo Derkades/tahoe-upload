@@ -8,9 +8,11 @@ Package: tahoe-upload
 Architecture: all
 Depends: python3 (>= 3.7), python3-requests, python3-tqdm
 Description: rsync-like upload program for Tahoe-LAFS
+Homepage: https://github.com/Derkades/tahoe-upload
 Conflicts: tahoe-upload-static
 
 Package: tahoe-upload-static
 Architecture: amd64
 Description: rsync-like upload program for Tahoe-LAFS (static build)
+Homepage: https://github.com/Derkades/tahoe-upload
 Conflicts: tahoe-upload
