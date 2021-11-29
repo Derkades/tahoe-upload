@@ -127,7 +127,7 @@ def upload_dir(path: Path, api: str, parent_cap: str, parent_contents: Dict[str,
 def upload_contents(parent_path: Path, api: str, parent_cap: str, log_prefix: str) -> None:
     parent_contents = get_names_in_dircap(api, parent_cap)
 
-    for path in parent_path.iterdir():
+    for path in sorted(parent_path.iterdir()):
         if path.is_file():
             check_upload_file(path, api, parent_cap, parent_contents, log_prefix)
         elif path.is_dir():
