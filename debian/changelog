@@ -1,3 +1,10 @@
+tahoe-upload (1.1.0-1) any; urgency=medium
+
+  * Performance improvements for unchanged files
+  * Upload files in alphabetical order
+
+ -- Robin Slot <robin@rkslot.nl>  Mon, 29 Nov 2021 19:54:15 +0100
+
 tahoe-upload (1.0.0-2) any; urgency=medium
 
   * Moved to new repository, minor packaging changes
