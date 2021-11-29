@@ -71,7 +71,8 @@ def upload_file(path: Path, file_size: int, api: str, parent_cap: str, log_prefi
         exit(1)
 
 
-def check_upload_file(path: Path, api: str, parent_cap: str, parent_contents: Dict[str, Tuple[str, bool, int]], log_prefix: str) -> None:
+def check_upload_file(path: Path, api: str, parent_cap: str, parent_contents: Dict[str, Tuple[str, bool, int]],
+                      log_prefix: str) -> None:
     # check if a file or directory with this name already exists
     print(log_prefix + path.name, end=': ')
     if path.name in parent_contents:
@@ -104,7 +105,8 @@ def check_upload_file(path: Path, api: str, parent_cap: str, parent_contents: Di
         upload_file(path, path.stat().st_size, api, parent_cap, log_prefix)
 
 
-def upload_dir(path: Path, api: str, parent_cap: str, parent_contents: Dict[str, Tuple[str, bool, int]], log_prefix: str) -> None:
+def upload_dir(path: Path, api: str, parent_cap: str, parent_contents: Dict[str, Tuple[str, bool, int]],
+               log_prefix: str) -> None:
     print(log_prefix + path.name, end=': ')
     if path.name in parent_contents:
         (cap, is_dir, _size) = parent_contents[path.name]
