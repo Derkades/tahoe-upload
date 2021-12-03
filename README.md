@@ -1,5 +1,7 @@
 # tahoe-upload
 
+Rsync-like file uploading program for Tahoe-LAFS. Also see [tahoe-pyfuse3](https://github.com/Derkades/tahoe-pyfuse3) for a Tahoe-LAFS FUSE mount client.
+
 ## Installation
 
 ### Native python
