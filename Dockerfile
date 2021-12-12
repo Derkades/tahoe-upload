@@ -4,7 +4,8 @@ RUN apt-get update
 
 RUN pip install pyinstaller
 
-RUN pip install tqdm requests
+COPY requirements.txt /requirements
+RUN pip install -r /requirements
 
 WORKDIR /data
 COPY . .
