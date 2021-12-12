@@ -6,9 +6,9 @@ Rsync-like file uploading program for Tahoe-LAFS. Also see [tahoe-pyfuse3](https
 
 ### Native python
 
-Install dependencies (debian):
+Install dependencies (probably in a venv):
 ```
-apt install python3 python3-requests python3-tqdm
+pip3 install -r requirements.txt
 ```
 
 Run `python3 upload.py`
